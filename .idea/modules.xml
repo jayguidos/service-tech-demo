@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/service-tech-demo.iml" filepath="$PROJECT_DIR$/service-tech-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/std-dto/std-dto.iml" filepath="$PROJECT_DIR$/std-dto/std-dto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/std-external-patient-service/std-external-patient-service.iml" filepath="$PROJECT_DIR$/std-external-patient-service/std-external-patient-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/std-internal-patient-service/std-internal-patient-service.iml" filepath="$PROJECT_DIR$/std-internal-patient-service/std-internal-patient-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/std-jpa-model/std-jpa-model.iml" filepath="$PROJECT_DIR$/std-jpa-model/std-jpa-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/std-main/std-main.iml" filepath="$PROJECT_DIR$/std-main/std-main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/std-patient-rest-service/std-patient-rest-service.iml" filepath="$PROJECT_DIR$/std-patient-rest-service/std-patient-rest-service.iml" />
+    </modules>
+  </component>
+</project>

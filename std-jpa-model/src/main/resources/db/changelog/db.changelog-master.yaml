@@ -1,0 +1,81 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: jay.guidos
+      changes:
+        - createTable:
+            tableName: jpapatient
+            columns:
+              - column:
+                  name: id
+                  type: long
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: first_name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: last_name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+  - changeSet:
+      id: 2
+      author: jay.guidos
+      changes:
+        - insert:
+            tableName: jpapatient
+            columns:
+              - column:
+                  name: first_name
+                  value: John
+              - column:
+                  name: last_name
+                  value: McCarthy
+        - insert:
+            tableName: jpapatient
+            columns:
+              - column:
+                  name: first_name
+                  value: Grame
+              - column:
+                  name: last_name
+                  value: Ahokas
+        - insert:
+            tableName: jpapatient
+            columns:
+              - column:
+                  name: first_name
+                  value: Luis
+              - column:
+                  name: last_name
+                  value: Pizzaro
+
+  - changeSet:
+      id: 4
+      author: jay.guidos
+      changes:
+        - addColumn:
+            tableName: jpapatient
+            columns:
+              - column:
+                  name: middle_name
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+
+  - changeSet:
+      id: 3
+      author: jay.guidos
+      changes:
+        - update:
+            tableName: jpapatient
+            where: id = 1
+            columns:
+              - column:
+                  name: middle_name
+                  value: M
